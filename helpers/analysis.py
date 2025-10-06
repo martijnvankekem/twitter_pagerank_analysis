@@ -2,14 +2,14 @@ import time
 
 
 class Analysis:
-    def __init__(self, id: str, description: str):
+    def __init__(self, name: str, description: str):
         self.start_time = None
         self.end_time = None
         self.iteration_start_time = None
         self.iteration_timings = []
         self.iteration_meta: list[dict] = []
-        self.id = id
-        self.name = description
+        self.name = name
+        self.description = description
 
     def start(self):
         """
@@ -46,8 +46,8 @@ class Analysis:
         String representation of the object, used for printing.
         """
         result = "Run-time and complexity analysis\n"
-        result += "-- id: " + self.id + "\n"
         result += "-- name: " + self.name + "\n"
+        result += "-- description: " + self.description + "\n"
         if self.end_time is not None:
             duration = self.end_time - self.start_time
             result += "-- duration: {} ms ({} ns)\n".format(duration // 1_000_000, duration)
@@ -85,5 +85,5 @@ class Analysis:
         ----------
         out_path: the output location.
         """
-        with open("output/" + out_path + "/analysis/{}.txt".format(self.id), "w") as f:
+        with open("output/" + out_path + "/analysis/{}.txt".format(self.name), "w") as f:
             f.write(str(self) + "\n\n")
