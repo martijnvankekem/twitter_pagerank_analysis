@@ -12,3 +12,4 @@
 ## Running the PageRank algorithm
 1. Make sure you've followed the steps in [Getting started](#getting-started).
 2. Run the desired script.
+   - If you're interested in the full list of PageRank results, instead of just the top 10 min and max, include the CLI argument `--full`.

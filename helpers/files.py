@@ -1,3 +1,5 @@
+import sys
+
 import numpy as np
 from scipy import sparse
 from helpers.analysis import Analysis
@@ -10,7 +12,9 @@ def output_to_file(out_path, array):
     out_path: the output path to write to, either 'full' or 'presentation'
     array: the array to write.
     """
+    print("Sorting PageRank values.")
     sorted_array = np.sort(array)
+    print("Values sorted, writing output to files.")
 
     # Save top 10 lowest and highest values.
     with open("output/" + out_path + "/top10.txt", "wb") as f:
@@ -20,15 +24,17 @@ def output_to_file(out_path, array):
         f.write(b"\n\nTop 10 - Highest values\n")
         np.savetxt(f, sorted_array[-10:], delimiter="\n")
 
-    # Save complete unsorted output.
-    with open("output/" + out_path + "/full_unsorted.txt", "wb") as f:
-        f.write(b"COMPLETE - Unsorted\n")
-        np.savetxt(f, array, delimiter="\n")
+    # If CLI argument '--full' is supplied, also write full output to files.
+    if sys.argv[1] == "--full":
+        # Save complete unsorted output.
+        with open("output/" + out_path + "/full_unsorted.txt", "wb") as f:
+            f.write(b"COMPLETE - Unsorted\n")
+            np.savetxt(f, array, delimiter="\n")
 
-    # Save complete sorted output.
-    with open("output/" + out_path + "/full_sorted.txt", "wb") as f:
-        f.write(b"COMPLETE - Sorted\n")
-        np.savetxt(f, sorted_array, delimiter="\n")
+        # Save complete sorted output.
+        with open("output/" + out_path + "/full_sorted.txt", "wb") as f:
+            f.write(b"COMPLETE - Sorted\n")
+            np.savetxt(f, sorted_array, delimiter="\n")
 
 
 def open_file(out_path: str, filename):
