@@ -6,7 +6,8 @@ class Analysis:
         self.start_time = None
         self.end_time = None
         self.iteration_start_time = None
-        self.iterations = []
+        self.iteration_timings = []
+        self.iteration_meta: list[dict] = []
         self.id = id
         self.name = description
 
@@ -22,7 +23,7 @@ class Analysis:
         """
         self.iteration_start_time = time.time_ns()
 
-    def stop_iteration(self):
+    def stop_iteration(self, metadata: dict = None):
         """
         Log that an iteration has finished.
         """
@@ -30,7 +31,8 @@ class Analysis:
             return
 
         # Save duration and reset start timer.
-        self.iterations.append(time.time_ns() - self.iteration_start_time)
+        self.iteration_timings.append(time.time_ns() - self.iteration_start_time)
+        self.iteration_meta.append({} if metadata is None else metadata)
         self.iteration_start_time = None
 
     def stop(self):
@@ -55,19 +57,23 @@ class Analysis:
             result += "-- duration: not yet stopped\n"
             result += "   > start time (in ns): " + str(self.start_time) + "\n"
 
-        result += "-- iterations: {}".format(len(self.iterations)) + "\n"
-        if len(self.iterations) > 0:
+        result += "-- iterations: {}".format(len(self.iteration_timings)) + "\n"
+        if len(self.iteration_timings) > 0:
             # Get average per iteration
-            avg = sum(self.iterations) / len(self.iterations)
+            avg = sum(self.iteration_timings) / len(self.iteration_timings)
             avg_ms = avg // 1_000_000
             result += ("   > avg. duration per iteration: {} ms ({} ns)"
                        .format(avg_ms, avg) + "\n")
 
             # Write individual iterations
-            for index, iteration in enumerate(self.iterations):
+            for index, iteration in enumerate(self.iteration_timings):
                 in_ms = iteration // 1_000_000
                 value = "{} ms ({} ns)".format(in_ms, iteration)
                 result += "   > iteration " + str(index) + ": " + value + "\n"
+
+                # Add metadata to output
+                for key, value in self.iteration_meta[index].items():
+                    result += "     -- " + key + ": " + str(value) + "\n"
 
         return result
 

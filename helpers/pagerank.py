@@ -36,19 +36,19 @@ def run(m, out_path: str, d: float = 0.85):
     print("Starting iterations.")
     analysis_obj.start_iteration()
     v = m_hat @ w + (1 - d) / n
-    norm = np.linalg.norm(w - v)
-    analysis_obj.stop_iteration()
+    norm = np.linalg.norm(w - v, ord=1)
+    analysis_obj.stop_iteration({"norm": norm})
     while norm >= 1e-10:
         # Run another round of the algorithm
         analysis_obj.start_iteration()
         w = v
         v = m_hat @ w + (1 - d) / n
-        norm = np.linalg.norm(w - v)
+        norm = np.linalg.norm(w - v, ord=1)
 
         # Iteration finished, print current norm and result
         print("Norm", norm)
         print(v)
-        analysis_obj.stop_iteration()
+        analysis_obj.stop_iteration({"norm": norm})
 
     # Finish analysis
     analysis_obj.stop()
