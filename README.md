@@ -17,6 +17,7 @@
 ## Output files
 Depending on the script that is run, the output will be stored in a subfolder of the `output/` folder.
 
+- `toy`: the toy example matrix for testing purposes.
 - `presentation`: the presentation matrix, which contains a representative slice of the total matrix to simulate results in a faster way.
 - `full`: the full matrix, containing all available edges.
 

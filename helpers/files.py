@@ -9,7 +9,7 @@ def output_to_file(out_path, array):
 
     Parameters
     ----------
-    out_path: the output path to write to, either 'full' or 'presentation'
+    out_path: the output path to write to, either 'full', 'presentation' or 'toy'.
     array: the array to write.
     """
     print("Sorting PageRank values.")
@@ -42,7 +42,7 @@ def open_file(out_path: str, filename):
 
     Parameters
     ----------
-    out_path: the output path to write to, either 'full' or 'presentation'.
+    out_path: the output path to write to, either 'full', 'presentation' or 'toy'.
     filename: the name of the file relative to the current working directory.
 
     Returns

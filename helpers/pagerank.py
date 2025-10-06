@@ -13,7 +13,7 @@ def run(m, out_path: str, d: float = 0.85):
         adjacency matrix where M_i,j represents the link from 'j' to 'i', such that for all 'j'
         The matrix must be normalized first.
 
-    out_path: the output path to write to, either 'full' or 'presentation'
+    out_path: the output path to write to, either 'full', 'presentation' or 'toy'.
 
     d: float, optional
         damping factor, by default 0.85
