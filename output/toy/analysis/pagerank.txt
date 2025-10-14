@@ -1,12 +1,12 @@
 Run-time and complexity analysis
 -- name: pagerank
 -- description: PageRank algorithm
--- duration: 3 ms (3005100 ns)
-   > start time (in ns): 1759763287647133200
-   > end time (in ns): 1759763287650138300
+-- duration: 2 ms (2049000 ns)
+   > start time (in ns): 1759763589676003600
+   > end time (in ns): 1759763589678052600
 -- iterations: 20
-   > avg. duration per iteration: 0.0 ms (150255.0 ns)
-   > iteration 0: 1 ms (1004500 ns)
+   > avg. duration per iteration: 0.0 ms (102450.0 ns)
+   > iteration 0: 0 ms (0 ns)
      -- norm: 0.4221666666666667
    > iteration 1: 0 ms (0 ns)
      -- norm: 0.1348666666666667
@@ -16,11 +16,11 @@ Run-time and complexity analysis
      -- norm: 0.0172231451022376
    > iteration 4: 0 ms (0 ns)
      -- norm: 0.004041183536164849
-   > iteration 5: 1 ms (1010400 ns)
+   > iteration 5: 0 ms (0 ns)
      -- norm: 0.0020071313001960786
    > iteration 6: 0 ms (0 ns)
      -- norm: 0.0005346957633225423
-   > iteration 7: 0 ms (0 ns)
+   > iteration 7: 1 ms (1000700 ns)
      -- norm: 0.00019607912792047807
    > iteration 8: 0 ms (0 ns)
      -- norm: 4.5178731676472766e-05
@@ -40,7 +40,7 @@ Run-time and complexity analysis
      -- norm: 1.708755578699872e-08
    > iteration 16: 0 ms (0 ns)
      -- norm: 5.346135707740007e-09
-   > iteration 17: 0 ms (990200 ns)
+   > iteration 17: 1 ms (1048300 ns)
      -- norm: 9.944695483765642e-10
    > iteration 18: 0 ms (0 ns)
      -- norm: 2.652837012562248e-10
