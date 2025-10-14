@@ -17,7 +17,7 @@ def output_to_file(out_path, array):
     print("Values sorted, writing output to files.")
 
     # Save top 10 lowest and highest values.
-    with open("output/" + out_path + "/top10.txt", "wb") as f:
+    with open("../output/" + out_path + "/top10.txt", "wb") as f:
         f.write(b"Top 10 - Lowest values\n")
         np.savetxt(f, sorted_array[0:10], delimiter="\n")
 
@@ -27,12 +27,12 @@ def output_to_file(out_path, array):
     # If CLI argument '--full' is supplied, also write full output to files.
     if len(sys.argv) >= 2 and sys.argv[1] == "--full":
         # Save complete unsorted output.
-        with open("output/" + out_path + "/full_unsorted.txt", "wb") as f:
+        with open("../output/" + out_path + "/full_unsorted.txt", "wb") as f:
             f.write(b"COMPLETE - Unsorted\n")
             np.savetxt(f, array, delimiter="\n")
 
         # Save complete sorted output.
-        with open("output/" + out_path + "/full_sorted.txt", "wb") as f:
+        with open("../output/" + out_path + "/full_sorted.txt", "wb") as f:
             f.write(b"COMPLETE - Sorted\n")
             np.savetxt(f, sorted_array, delimiter="\n")
 

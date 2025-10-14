@@ -8,6 +8,8 @@
    - A file named `twitter7_csr.npz` will be created in the `dataset` folder. This can take a while.
 4. Run the `getting_started/2_normalize.py` script to normalize the CSR matrix.
    - A file named `twitter7_normalized_csr.npz` will be created in the `dataset` folder. This can take a while.
+5. Run the `getting_started/3_create_presentation_matrix.py` script to create a submatrix for presentation purposes.
+   - A file named `twitter7_normalized_csr_presentation.npz` will be created in the `dataset` folder. This can take a while.
 
 ## Running the PageRank algorithm
 1. Make sure you've followed the steps in [Getting started](#getting-started).

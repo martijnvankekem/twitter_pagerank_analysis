@@ -85,5 +85,5 @@ class Analysis:
         ----------
         out_path: the output location.
         """
-        with open("output/" + out_path + "/analysis/{}.txt".format(self.name), "w") as f:
+        with open("../output/" + out_path + "/analysis/{}.txt".format(self.name), "w") as f:
             f.write(str(self) + "\n\n")

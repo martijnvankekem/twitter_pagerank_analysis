@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.preprocessing import normalize
-from helpers.pagerank import run
+from helpers.pagerank_quadratic import run
 import matplotlib.pyplot as plt
 
 # --- CONSTANTS ---

@@ -1,9 +1,9 @@
 Run-time and complexity analysis
--- id: matrix_load
--- name: Loading matrix into memory
--- duration: 39802 ms (39802029000 ns)
-   > start time (in ns): 1759758981851351400
-   > end time (in ns): 1759759021653380400
+-- name: matrix_load
+-- description: Loading matrix into memory
+-- duration: 5749 ms (5749025200 ns)
+   > start time (in ns): 1760445954809825800
+   > end time (in ns): 1760445960558851000
 -- iterations: 0
 
 
