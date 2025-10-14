@@ -3,7 +3,7 @@ from helpers.analysis import Analysis
 from helpers.files import output_to_file
 
 MAX_ITERATIONS = 10_000
-QE_EVERY = 3
+QE_EVERY = 15
 TOLERANCE = 1e-10
 
 def l1_normalize(v):
@@ -75,7 +75,14 @@ def run(m, out_path: str, d: float = 0.85):
     Source: https://nlp.stanford.edu/pubs/extrapolation.pdf
     """
     analysis_obj = Analysis("pagerank_quadratic",
-                            "PageRank algorithm - Quadratic")
+                            "PageRank algorithm - Quadratic",
+                            {
+                                "run_type": out_path,
+                                "damping": d,
+                                "max_iterations": MAX_ITERATIONS,
+                                "extrapolate_every": QE_EVERY,
+                                "tolerance": TOLERANCE,
+                            })
     analysis_obj.start()
 
     n = m.shape[0]
@@ -90,14 +97,19 @@ def run(m, out_path: str, d: float = 0.85):
         x = x_next
         k += 1
 
-        print("Norm", norm)
-        analysis_obj.stop_iteration({"norm": norm})
-
         # periodically apply QE using current x as x^(k)
         if QE_EVERY and (k % QE_EVERY == 0) and k + 3 <= MAX_ITERATIONS:
             x = quadratic_extrapolation(m, x, d)
+
+            print("Norm", norm)
+            analysis_obj.stop_iteration({"norm": norm, "has_extrapolated": True})
+
             if np.linalg.norm(pagerank_step(m, x, d) - x, 1) < TOLERANCE:
                 break
+
+        else:
+            print("Norm", norm)
+            analysis_obj.stop_iteration({"norm": norm, "has_extrapolated": False})
 
         if norm < TOLERANCE:
             break

@@ -26,7 +26,11 @@ def run(m, out_path: str, d: float = 0.85):
 
     """
     analysis_obj = Analysis("pagerank_default",
-                            "PageRank algorithm - Default")
+                            "PageRank algorithm - Default", {
+                                "run_type": out_path,
+                                "damping": d,
+                                "tolerance": TOLERANCE,
+                            })
     analysis_obj.start()
 
     # Prepare PageRank algorithm

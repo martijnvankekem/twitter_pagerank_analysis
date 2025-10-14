@@ -2,9 +2,10 @@ import time
 
 
 class Analysis:
-    def __init__(self, name: str, description: str):
+    def __init__(self, name: str, description: str, metadata: dict = None):
         self.start_time = None
         self.end_time = None
+        self.metadata = metadata
         self.iteration_start_time = None
         self.iteration_timings = []
         self.iteration_meta: list[dict] = []
@@ -48,6 +49,12 @@ class Analysis:
         result = "Run-time and complexity analysis\n"
         result += "-- name: " + self.name + "\n"
         result += "-- description: " + self.description + "\n"
+
+        if self.metadata is not None:
+            result += "-- metadata:\n"
+            for key, value in self.metadata.items():
+                result += "   > " + key + ": " + str(value) + "\n"
+
         if self.end_time is not None:
             duration = self.end_time - self.start_time
             result += "-- duration: {} ms ({} ns)\n".format(duration // 1_000_000, duration)
@@ -73,7 +80,7 @@ class Analysis:
 
                 # Add metadata to output
                 for key, value in self.iteration_meta[index].items():
-                    result += "     -- " + key + ": " + str(value) + "\n"
+                    result += "     > " + key + ": " + str(value) + "\n"
 
         return result
 
