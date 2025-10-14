@@ -1,0 +1,46 @@
+Run-time and complexity analysis
+-- name: pagerank_quadratic
+-- description: PageRank algorithm - Quadratic
+-- metadata:
+   > run_type: toy
+   > damping: 0.85
+   > tolerance: 1e-06
+   > max_iterations: 10000
+   > extrapolate_every: 10
+-- duration: 0 ms (0 ns)
+   > start time (in ns): 1760447561718847300
+   > end time (in ns): 1760447561718847300
+-- iterations: 10
+   > avg. duration per iteration: 0.0 ms (0.0 ns)
+   > iteration 0: 0 ms (0 ns)
+     > norm: 0.4221666666666668
+     > has_extrapolated: False
+   > iteration 1: 0 ms (0 ns)
+     > norm: 0.13486666666666655
+     > has_extrapolated: False
+   > iteration 2: 0 ms (0 ns)
+     > norm: 0.03783123726851851
+     > has_extrapolated: False
+   > iteration 3: 0 ms (0 ns)
+     > norm: 0.01722314510223765
+     > has_extrapolated: False
+   > iteration 4: 0 ms (0 ns)
+     > norm: 0.004041183536164762
+     > has_extrapolated: False
+   > iteration 5: 0 ms (0 ns)
+     > norm: 0.002007131300195867
+     > has_extrapolated: False
+   > iteration 6: 0 ms (0 ns)
+     > norm: 0.0005346957633223896
+     > has_extrapolated: False
+   > iteration 7: 0 ms (0 ns)
+     > norm: 0.00019607912792043644
+     > has_extrapolated: False
+   > iteration 8: 0 ms (0 ns)
+     > norm: 4.517873167633746e-05
+     > has_extrapolated: False
+   > iteration 9: 0 ms (0 ns)
+     > norm: 1.1927726201555605e-05
+     > has_extrapolated: True
+
+

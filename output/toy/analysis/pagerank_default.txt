@@ -1,0 +1,38 @@
+Run-time and complexity analysis
+-- name: pagerank_default
+-- description: PageRank algorithm - Default
+-- metadata:
+   > run_type: toy
+   > damping: 0.85
+   > tolerance: 1e-06
+-- duration: 1 ms (1004400 ns)
+   > start time (in ns): 1760447556462529000
+   > end time (in ns): 1760447556463533400
+-- iterations: 12
+   > avg. duration per iteration: 0.0 ms (83700.0 ns)
+   > iteration 0: 0 ms (0 ns)
+     > norm: 0.4221666666666667
+   > iteration 1: 0 ms (0 ns)
+     > norm: 0.1348666666666667
+   > iteration 2: 0 ms (0 ns)
+     > norm: 0.03783123726851849
+   > iteration 3: 0 ms (0 ns)
+     > norm: 0.0172231451022376
+   > iteration 4: 0 ms (0 ns)
+     > norm: 0.004041183536164849
+   > iteration 5: 1 ms (1004400 ns)
+     > norm: 0.0020071313001960786
+   > iteration 6: 0 ms (0 ns)
+     > norm: 0.0005346957633225423
+   > iteration 7: 0 ms (0 ns)
+     > norm: 0.00019607912792047807
+   > iteration 8: 0 ms (0 ns)
+     > norm: 4.5178731676472766e-05
+   > iteration 9: 0 ms (0 ns)
+     > norm: 1.1927726201694383e-05
+   > iteration 10: 0 ms (0 ns)
+     > norm: 3.0986509668498585e-06
+   > iteration 11: 0 ms (0 ns)
+     > norm: 9.859846059057098e-07
+
+

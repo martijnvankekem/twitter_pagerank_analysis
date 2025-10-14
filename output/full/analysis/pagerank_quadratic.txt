@@ -1,0 +1,109 @@
+Run-time and complexity analysis
+-- name: pagerank_quadratic
+-- description: PageRank algorithm - Quadratic
+-- metadata:
+   > run_type: full
+   > damping: 0.85
+   > tolerance: 1e-06
+   > max_iterations: 10000
+   > extrapolate_every: 10
+-- duration: 773230 ms (773230135600 ns)
+   > start time (in ns): 1760449043040123000
+   > end time (in ns): 1760449816270258600
+-- iterations: 31
+   > avg. duration per iteration: 23188.0 ms (23188576148.387096 ns)
+   > iteration 0: 16016 ms (16016026700 ns)
+     > norm: 1.212025620490048
+     > has_extrapolated: False
+   > iteration 1: 17557 ms (17557894500 ns)
+     > norm: 0.6271928564359202
+     > has_extrapolated: False
+   > iteration 2: 16538 ms (16538770900 ns)
+     > norm: 0.2687692931528572
+     > has_extrapolated: False
+   > iteration 3: 16330 ms (16330893300 ns)
+     > norm: 0.1198262994490329
+     > has_extrapolated: False
+   > iteration 4: 16351 ms (16351450800 ns)
+     > norm: 0.06061933389596828
+     > has_extrapolated: False
+   > iteration 5: 16318 ms (16318833100 ns)
+     > norm: 0.03500673848823261
+     > has_extrapolated: False
+   > iteration 6: 16116 ms (16116976000 ns)
+     > norm: 0.021712266371320798
+     > has_extrapolated: False
+   > iteration 7: 16072 ms (16072915800 ns)
+     > norm: 0.01424632632899359
+     > has_extrapolated: False
+   > iteration 8: 14420 ms (14420453000 ns)
+     > norm: 0.009624818816161245
+     > has_extrapolated: False
+   > iteration 9: 55517 ms (55517764500 ns)
+     > norm: 0.006728124979472713
+     > has_extrapolated: True
+   > iteration 10: 16118 ms (16118144200 ns)
+     > norm: 0.000653507900740593
+     > has_extrapolated: False
+   > iteration 11: 17510 ms (17510784000 ns)
+     > norm: 0.00044940252881456316
+     > has_extrapolated: False
+   > iteration 12: 18005 ms (18005921200 ns)
+     > norm: 0.0003235875191275116
+     > has_extrapolated: False
+   > iteration 13: 17566 ms (17566445500 ns)
+     > norm: 0.00024210763854519407
+     > has_extrapolated: False
+   > iteration 14: 17311 ms (17311738800 ns)
+     > norm: 0.00018768892544365417
+     > has_extrapolated: False
+   > iteration 15: 17053 ms (17053085000 ns)
+     > norm: 0.0001517284230098437
+     > has_extrapolated: False
+   > iteration 16: 17289 ms (17289641300 ns)
+     > norm: 0.00012505692162940015
+     > has_extrapolated: False
+   > iteration 17: 19171 ms (19171030700 ns)
+     > norm: 0.00010564441153291191
+     > has_extrapolated: False
+   > iteration 18: 20793 ms (20793731900 ns)
+     > norm: 8.974391338380845e-05
+     > has_extrapolated: False
+   > iteration 19: 86542 ms (86542589400 ns)
+     > norm: 7.712191579851745e-05
+     > has_extrapolated: True
+   > iteration 20: 17042 ms (17042757000 ns)
+     > norm: 9.444552998417426e-06
+     > has_extrapolated: False
+   > iteration 21: 21388 ms (21388960600 ns)
+     > norm: 7.077385474697838e-06
+     > has_extrapolated: False
+   > iteration 22: 19229 ms (19229203700 ns)
+     > norm: 5.339413689106631e-06
+     > has_extrapolated: False
+   > iteration 23: 21465 ms (21465534500 ns)
+     > norm: 4.133541169503673e-06
+     > has_extrapolated: False
+   > iteration 24: 20157 ms (20157755000 ns)
+     > norm: 3.2231132386784684e-06
+     > has_extrapolated: False
+   > iteration 25: 19452 ms (19452473000 ns)
+     > norm: 2.566583674696671e-06
+     > has_extrapolated: False
+   > iteration 26: 18895 ms (18895947700 ns)
+     > norm: 2.05753161933215e-06
+     > has_extrapolated: False
+   > iteration 27: 19917 ms (19917314200 ns)
+     > norm: 1.680544887990717e-06
+     > has_extrapolated: False
+   > iteration 28: 21495 ms (21495588400 ns)
+     > norm: 1.37743175078273e-06
+     > has_extrapolated: False
+   > iteration 29: 72371 ms (72371052400 ns)
+     > norm: 1.1481685579153602e-06
+     > has_extrapolated: True
+   > iteration 30: 18824 ms (18824183500 ns)
+     > norm: 5.615144126007787e-07
+     > has_extrapolated: False
+
+

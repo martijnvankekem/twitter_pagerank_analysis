@@ -6,7 +6,8 @@ from helpers.pagerank_quadratic import run
 RUN_TYPE = "presentation"
 
 # Read normalized CSR matrix from file and load into memory.
-A = open_file(RUN_TYPE, "../dataset/twitter7_normalized_csr_presentation.npz")
+A = open_file(RUN_TYPE, "../dataset/twitter7_normalized_csr.npz")
+A = A[0:5_000_000, 0:5_000_000]
 
 # Run pagerank algorithm and write result to output file.
 print("Starting PageRank.")

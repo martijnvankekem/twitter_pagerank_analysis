@@ -1,0 +1,1264 @@
+Run-time and complexity analysis
+-- name: pagerank_quadratic
+-- description: PageRank algorithm - Quadratic
+-- metadata:
+   > run_type: presentation
+   > damping: 0.85
+   > tolerance: 1e-06
+   > max_iterations: 10000
+   > extrapolate_every: 10
+-- duration: 778025 ms (778025804600 ns)
+   > start time (in ns): 1760467381649087100
+   > end time (in ns): 1760468159674891700
+-- iterations: 416
+   > avg. duration per iteration: 1740.0 ms (1740001556.9711537 ns)
+   > iteration 0: 1902 ms (1902281400 ns)
+     > norm: 1.047364244874338
+     > has_extrapolated: False
+   > iteration 1: 1768 ms (1768363900 ns)
+     > norm: 0.44405947456750394
+     > has_extrapolated: False
+   > iteration 2: 1724 ms (1724106800 ns)
+     > norm: 0.1789115311972448
+     > has_extrapolated: False
+   > iteration 3: 1651 ms (1651983800 ns)
+     > norm: 0.09731768124302219
+     > has_extrapolated: False
+   > iteration 4: 1628 ms (1628872700 ns)
+     > norm: 0.06324647183171318
+     > has_extrapolated: False
+   > iteration 5: 1798 ms (1798457200 ns)
+     > norm: 0.048365303759710807
+     > has_extrapolated: False
+   > iteration 6: 1817 ms (1817973200 ns)
+     > norm: 0.041501430307653644
+     > has_extrapolated: False
+   > iteration 7: 1783 ms (1783246000 ns)
+     > norm: 0.038570455084065924
+     > has_extrapolated: False
+   > iteration 8: 1752 ms (1752704400 ns)
+     > norm: 0.037091355526914005
+     > has_extrapolated: False
+   > iteration 9: 7145 ms (7145979100 ns)
+     > norm: 0.03667712861527708
+     > has_extrapolated: True
+   > iteration 10: 2222 ms (2222991700 ns)
+     > norm: 0.33283736213911363
+     > has_extrapolated: False
+   > iteration 11: 1882 ms (1882730100 ns)
+     > norm: 0.2077467115352294
+     > has_extrapolated: False
+   > iteration 12: 2093 ms (2093628600 ns)
+     > norm: 0.14812711839226275
+     > has_extrapolated: False
+   > iteration 13: 1446 ms (1446025900 ns)
+     > norm: 0.11265408641679928
+     > has_extrapolated: False
+   > iteration 14: 1164 ms (1164121500 ns)
+     > norm: 0.08881569336050485
+     > has_extrapolated: False
+   > iteration 15: 1050 ms (1050911900 ns)
+     > norm: 0.07141430464234559
+     > has_extrapolated: False
+   > iteration 16: 1059 ms (1059664100 ns)
+     > norm: 0.05871438919106109
+     > has_extrapolated: False
+   > iteration 17: 1033 ms (1033924600 ns)
+     > norm: 0.04885103456863625
+     > has_extrapolated: False
+   > iteration 18: 1058 ms (1058224100 ns)
+     > norm: 0.04137710758492662
+     > has_extrapolated: False
+   > iteration 19: 4361 ms (4361940200 ns)
+     > norm: 0.035220532359266796
+     > has_extrapolated: True
+   > iteration 20: 1042 ms (1042630100 ns)
+     > norm: 0.005131473861449359
+     > has_extrapolated: False
+   > iteration 21: 1040 ms (1040488100 ns)
+     > norm: 0.004695704989177249
+     > has_extrapolated: False
+   > iteration 22: 1036 ms (1036682000 ns)
+     > norm: 0.004343827912603729
+     > has_extrapolated: False
+   > iteration 23: 1049 ms (1049506500 ns)
+     > norm: 0.004011296569912419
+     > has_extrapolated: False
+   > iteration 24: 1048 ms (1048750900 ns)
+     > norm: 0.003739524064976378
+     > has_extrapolated: False
+   > iteration 25: 1068 ms (1068872100 ns)
+     > norm: 0.0034839598640449346
+     > has_extrapolated: False
+   > iteration 26: 1067 ms (1067108800 ns)
+     > norm: 0.0032768447139118464
+     > has_extrapolated: False
+   > iteration 27: 1057 ms (1057773200 ns)
+     > norm: 0.003102683366664329
+     > has_extrapolated: False
+   > iteration 28: 1056 ms (1056968000 ns)
+     > norm: 0.0029682561750045146
+     > has_extrapolated: False
+   > iteration 29: 4375 ms (4375926200 ns)
+     > norm: 0.0028320449280731545
+     > has_extrapolated: True
+   > iteration 30: 1084 ms (1084492600 ns)
+     > norm: 0.0011556455833399565
+     > has_extrapolated: False
+   > iteration 31: 1048 ms (1048217700 ns)
+     > norm: 0.0011120691671774236
+     > has_extrapolated: False
+   > iteration 32: 1048 ms (1048201300 ns)
+     > norm: 0.0010701798763259542
+     > has_extrapolated: False
+   > iteration 33: 1085 ms (1085911400 ns)
+     > norm: 0.0010294742601080508
+     > has_extrapolated: False
+   > iteration 34: 1055 ms (1055452500 ns)
+     > norm: 0.000994234829729104
+     > has_extrapolated: False
+   > iteration 35: 1051 ms (1051499100 ns)
+     > norm: 0.0009589796813519387
+     > has_extrapolated: False
+   > iteration 36: 1043 ms (1043193400 ns)
+     > norm: 0.0009252006964197765
+     > has_extrapolated: False
+   > iteration 37: 1060 ms (1060956300 ns)
+     > norm: 0.000895825760788279
+     > has_extrapolated: False
+   > iteration 38: 1062 ms (1062868600 ns)
+     > norm: 0.0008658319552065342
+     > has_extrapolated: False
+   > iteration 39: 4409 ms (4409665900 ns)
+     > norm: 0.0008393363388491585
+     > has_extrapolated: True
+   > iteration 40: 1052 ms (1052021000 ns)
+     > norm: 0.0006373688368417909
+     > has_extrapolated: False
+   > iteration 41: 1053 ms (1053706400 ns)
+     > norm: 0.0006154602713481646
+     > has_extrapolated: False
+   > iteration 42: 1060 ms (1060799800 ns)
+     > norm: 0.0005981495259468832
+     > has_extrapolated: False
+   > iteration 43: 1075 ms (1075485300 ns)
+     > norm: 0.0005830056630290644
+     > has_extrapolated: False
+   > iteration 44: 1067 ms (1067738300 ns)
+     > norm: 0.0005693852963050525
+     > has_extrapolated: False
+   > iteration 45: 1051 ms (1051097100 ns)
+     > norm: 0.0005566903561077465
+     > has_extrapolated: False
+   > iteration 46: 1067 ms (1067682100 ns)
+     > norm: 0.0005454236687678853
+     > has_extrapolated: False
+   > iteration 47: 1065 ms (1065024500 ns)
+     > norm: 0.0005340993224160779
+     > has_extrapolated: False
+   > iteration 48: 1056 ms (1056089100 ns)
+     > norm: 0.0005237241651154463
+     > has_extrapolated: False
+   > iteration 49: 4419 ms (4419208800 ns)
+     > norm: 0.0005140322134821415
+     > has_extrapolated: True
+   > iteration 50: 1068 ms (1068687700 ns)
+     > norm: 0.00045215201741470297
+     > has_extrapolated: False
+   > iteration 51: 1076 ms (1076361200 ns)
+     > norm: 0.00043867606458603654
+     > has_extrapolated: False
+   > iteration 52: 1075 ms (1075754700 ns)
+     > norm: 0.00042803112915795234
+     > has_extrapolated: False
+   > iteration 53: 1062 ms (1062311600 ns)
+     > norm: 0.00041702904380082036
+     > has_extrapolated: False
+   > iteration 54: 1065 ms (1065970700 ns)
+     > norm: 0.00040663137766519845
+     > has_extrapolated: False
+   > iteration 55: 1045 ms (1045618900 ns)
+     > norm: 0.00039822252263326555
+     > has_extrapolated: False
+   > iteration 56: 1060 ms (1060553700 ns)
+     > norm: 0.0003897886175552596
+     > has_extrapolated: False
+   > iteration 57: 1046 ms (1046072900 ns)
+     > norm: 0.0003810402498437969
+     > has_extrapolated: False
+   > iteration 58: 1088 ms (1088153700 ns)
+     > norm: 0.00037301557456596244
+     > has_extrapolated: False
+   > iteration 59: 4436 ms (4436846000 ns)
+     > norm: 0.0003650401475089853
+     > has_extrapolated: True
+   > iteration 60: 1057 ms (1057273100 ns)
+     > norm: 0.00031199534645559677
+     > has_extrapolated: False
+   > iteration 61: 1048 ms (1048454100 ns)
+     > norm: 0.0003048091788933261
+     > has_extrapolated: False
+   > iteration 62: 1062 ms (1062906500 ns)
+     > norm: 0.0002971860432231207
+     > has_extrapolated: False
+   > iteration 63: 1044 ms (1044758200 ns)
+     > norm: 0.0002894172847695658
+     > has_extrapolated: False
+   > iteration 64: 1057 ms (1057569000 ns)
+     > norm: 0.0002818165695267918
+     > has_extrapolated: False
+   > iteration 65: 1043 ms (1043092600 ns)
+     > norm: 0.00027250729589816346
+     > has_extrapolated: False
+   > iteration 66: 1056 ms (1056105900 ns)
+     > norm: 0.00026447999733807516
+     > has_extrapolated: False
+   > iteration 67: 1078 ms (1078151500 ns)
+     > norm: 0.00025696172126679157
+     > has_extrapolated: False
+   > iteration 68: 1076 ms (1076039700 ns)
+     > norm: 0.0002504082898792746
+     > has_extrapolated: False
+   > iteration 69: 4421 ms (4421407800 ns)
+     > norm: 0.00024405440848263233
+     > has_extrapolated: True
+   > iteration 70: 1054 ms (1054294900 ns)
+     > norm: 0.00021017217753075491
+     > has_extrapolated: False
+   > iteration 71: 1049 ms (1049312000 ns)
+     > norm: 0.00020469712545392331
+     > has_extrapolated: False
+   > iteration 72: 1055 ms (1055319800 ns)
+     > norm: 0.00020006214700498022
+     > has_extrapolated: False
+   > iteration 73: 1058 ms (1058698100 ns)
+     > norm: 0.00019514979555902766
+     > has_extrapolated: False
+   > iteration 74: 1063 ms (1063011700 ns)
+     > norm: 0.00019036163271309207
+     > has_extrapolated: False
+   > iteration 75: 1042 ms (1042608200 ns)
+     > norm: 0.00018572772749228357
+     > has_extrapolated: False
+   > iteration 76: 1059 ms (1059158400 ns)
+     > norm: 0.0001815113995810883
+     > has_extrapolated: False
+   > iteration 77: 1065 ms (1065415000 ns)
+     > norm: 0.00017667332719362302
+     > has_extrapolated: False
+   > iteration 78: 1077 ms (1077696800 ns)
+     > norm: 0.00017206560887254795
+     > has_extrapolated: False
+   > iteration 79: 4431 ms (4431449700 ns)
+     > norm: 0.0001679330888662559
+     > has_extrapolated: True
+   > iteration 80: 1059 ms (1059020500 ns)
+     > norm: 0.00014572992089756468
+     > has_extrapolated: False
+   > iteration 81: 1096 ms (1096958700 ns)
+     > norm: 0.00014198413932134098
+     > has_extrapolated: False
+   > iteration 82: 1083 ms (1083135500 ns)
+     > norm: 0.0001385228785462101
+     > has_extrapolated: False
+   > iteration 83: 1084 ms (1084940100 ns)
+     > norm: 0.00013532976537523368
+     > has_extrapolated: False
+   > iteration 84: 1064 ms (1064325700 ns)
+     > norm: 0.00013213507114616182
+     > has_extrapolated: False
+   > iteration 85: 1063 ms (1063479000 ns)
+     > norm: 0.0001293364957467918
+     > has_extrapolated: False
+   > iteration 86: 1038 ms (1038605000 ns)
+     > norm: 0.0001265061004599324
+     > has_extrapolated: False
+   > iteration 87: 1055 ms (1055536400 ns)
+     > norm: 0.0001236896461630484
+     > has_extrapolated: False
+   > iteration 88: 1079 ms (1079394500 ns)
+     > norm: 0.00012078352911548825
+     > has_extrapolated: False
+   > iteration 89: 4434 ms (4434940500 ns)
+     > norm: 0.00011816873222585356
+     > has_extrapolated: True
+   > iteration 90: 1073 ms (1073593500 ns)
+     > norm: 0.00010558693007330929
+     > has_extrapolated: False
+   > iteration 91: 1053 ms (1053780100 ns)
+     > norm: 0.00010344942615407075
+     > has_extrapolated: False
+   > iteration 92: 1060 ms (1060169500 ns)
+     > norm: 0.00010129001811003622
+     > has_extrapolated: False
+   > iteration 93: 1074 ms (1074771900 ns)
+     > norm: 9.92779612374284e-05
+     > has_extrapolated: False
+   > iteration 94: 1056 ms (1056349500 ns)
+     > norm: 9.724276439288249e-05
+     > has_extrapolated: False
+   > iteration 95: 1057 ms (1057723800 ns)
+     > norm: 9.51237042052631e-05
+     > has_extrapolated: False
+   > iteration 96: 1061 ms (1061252000 ns)
+     > norm: 9.320197369346519e-05
+     > has_extrapolated: False
+   > iteration 97: 1054 ms (1054267900 ns)
+     > norm: 9.13671349245704e-05
+     > has_extrapolated: False
+   > iteration 98: 1070 ms (1070392900 ns)
+     > norm: 8.935752470009893e-05
+     > has_extrapolated: False
+   > iteration 99: 4427 ms (4427372400 ns)
+     > norm: 8.750136771412238e-05
+     > has_extrapolated: True
+   > iteration 100: 1060 ms (1060894100 ns)
+     > norm: 7.764333080529328e-05
+     > has_extrapolated: False
+   > iteration 101: 1074 ms (1074720100 ns)
+     > norm: 7.597845283723576e-05
+     > has_extrapolated: False
+   > iteration 102: 1061 ms (1061400800 ns)
+     > norm: 7.444608379686751e-05
+     > has_extrapolated: False
+   > iteration 103: 1088 ms (1088700400 ns)
+     > norm: 7.277641872531017e-05
+     > has_extrapolated: False
+   > iteration 104: 1091 ms (1091920900 ns)
+     > norm: 7.136243838431832e-05
+     > has_extrapolated: False
+   > iteration 105: 1062 ms (1062024100 ns)
+     > norm: 6.995472475499455e-05
+     > has_extrapolated: False
+   > iteration 106: 1081 ms (1081923100 ns)
+     > norm: 6.85526229831528e-05
+     > has_extrapolated: False
+   > iteration 107: 1058 ms (1058653800 ns)
+     > norm: 6.726834585708618e-05
+     > has_extrapolated: False
+   > iteration 108: 1076 ms (1076989600 ns)
+     > norm: 6.579308841044295e-05
+     > has_extrapolated: False
+   > iteration 109: 4462 ms (4462846500 ns)
+     > norm: 6.445334130498139e-05
+     > has_extrapolated: True
+   > iteration 110: 1074 ms (1074892200 ns)
+     > norm: 5.8864534970725024e-05
+     > has_extrapolated: False
+   > iteration 111: 1076 ms (1076019500 ns)
+     > norm: 5.780412216810671e-05
+     > has_extrapolated: False
+   > iteration 112: 1072 ms (1072549400 ns)
+     > norm: 5.669042101176836e-05
+     > has_extrapolated: False
+   > iteration 113: 1053 ms (1053156200 ns)
+     > norm: 5.5602280764418124e-05
+     > has_extrapolated: False
+   > iteration 114: 1081 ms (1081791900 ns)
+     > norm: 5.4614667042656254e-05
+     > has_extrapolated: False
+   > iteration 115: 1072 ms (1072891700 ns)
+     > norm: 5.3642686298701604e-05
+     > has_extrapolated: False
+   > iteration 116: 1069 ms (1069179500 ns)
+     > norm: 5.268212740085215e-05
+     > has_extrapolated: False
+   > iteration 117: 1064 ms (1064776800 ns)
+     > norm: 5.1755520347621994e-05
+     > has_extrapolated: False
+   > iteration 118: 1068 ms (1068100000 ns)
+     > norm: 5.0826411316637804e-05
+     > has_extrapolated: False
+   > iteration 119: 4465 ms (4465601400 ns)
+     > norm: 4.991470731113032e-05
+     > has_extrapolated: True
+   > iteration 120: 1053 ms (1053469500 ns)
+     > norm: 4.575994196052879e-05
+     > has_extrapolated: False
+   > iteration 121: 1064 ms (1064540400 ns)
+     > norm: 4.498809555042472e-05
+     > has_extrapolated: False
+   > iteration 122: 1064 ms (1064153400 ns)
+     > norm: 4.4220408008575046e-05
+     > has_extrapolated: False
+   > iteration 123: 1088 ms (1088084800 ns)
+     > norm: 4.346796373524016e-05
+     > has_extrapolated: False
+   > iteration 124: 1054 ms (1054735100 ns)
+     > norm: 4.271344057001145e-05
+     > has_extrapolated: False
+   > iteration 125: 1056 ms (1056108900 ns)
+     > norm: 4.195128635836867e-05
+     > has_extrapolated: False
+   > iteration 126: 1061 ms (1061094100 ns)
+     > norm: 4.124614646513925e-05
+     > has_extrapolated: False
+   > iteration 127: 1068 ms (1068519300 ns)
+     > norm: 4.05024823607989e-05
+     > has_extrapolated: False
+   > iteration 128: 1072 ms (1072671100 ns)
+     > norm: 3.984767070567403e-05
+     > has_extrapolated: False
+   > iteration 129: 4472 ms (4472258400 ns)
+     > norm: 3.9191149420508286e-05
+     > has_extrapolated: True
+   > iteration 130: 1064 ms (1064804100 ns)
+     > norm: 3.649870133409872e-05
+     > has_extrapolated: False
+   > iteration 131: 1063 ms (1063777400 ns)
+     > norm: 3.5859668842136945e-05
+     > has_extrapolated: False
+   > iteration 132: 1061 ms (1061943300 ns)
+     > norm: 3.522850590655369e-05
+     > has_extrapolated: False
+   > iteration 133: 1077 ms (1077263200 ns)
+     > norm: 3.463416929955225e-05
+     > has_extrapolated: False
+   > iteration 134: 1364 ms (1364727300 ns)
+     > norm: 3.407046785016558e-05
+     > has_extrapolated: False
+   > iteration 135: 1084 ms (1084964300 ns)
+     > norm: 3.352830112269967e-05
+     > has_extrapolated: False
+   > iteration 136: 1072 ms (1072696900 ns)
+     > norm: 3.30010903560562e-05
+     > has_extrapolated: False
+   > iteration 137: 1069 ms (1069326400 ns)
+     > norm: 3.247593746065081e-05
+     > has_extrapolated: False
+   > iteration 138: 1081 ms (1081975400 ns)
+     > norm: 3.1964636813219643e-05
+     > has_extrapolated: False
+   > iteration 139: 4424 ms (4424471600 ns)
+     > norm: 3.147682571172901e-05
+     > has_extrapolated: True
+   > iteration 140: 1064 ms (1064777600 ns)
+     > norm: 2.92371623788267e-05
+     > has_extrapolated: False
+   > iteration 141: 1065 ms (1065598800 ns)
+     > norm: 2.8783062541948663e-05
+     > has_extrapolated: False
+   > iteration 142: 1062 ms (1062056400 ns)
+     > norm: 2.829056711393585e-05
+     > has_extrapolated: False
+   > iteration 143: 1074 ms (1074898000 ns)
+     > norm: 2.7841751849597974e-05
+     > has_extrapolated: False
+   > iteration 144: 1073 ms (1073228300 ns)
+     > norm: 2.7416482888425626e-05
+     > has_extrapolated: False
+   > iteration 145: 1067 ms (1067457200 ns)
+     > norm: 2.696471340059436e-05
+     > has_extrapolated: False
+   > iteration 146: 1078 ms (1078141600 ns)
+     > norm: 2.6559043653157587e-05
+     > has_extrapolated: False
+   > iteration 147: 1062 ms (1062037400 ns)
+     > norm: 2.6163319255818298e-05
+     > has_extrapolated: False
+   > iteration 148: 1069 ms (1069001100 ns)
+     > norm: 2.5776148546933873e-05
+     > has_extrapolated: False
+   > iteration 149: 4460 ms (4460204800 ns)
+     > norm: 2.5385707495476228e-05
+     > has_extrapolated: True
+   > iteration 150: 1083 ms (1083134300 ns)
+     > norm: 2.3880642291959305e-05
+     > has_extrapolated: False
+   > iteration 151: 1047 ms (1047882400 ns)
+     > norm: 2.3544832345593843e-05
+     > has_extrapolated: False
+   > iteration 152: 1063 ms (1063345900 ns)
+     > norm: 2.32207272921367e-05
+     > has_extrapolated: False
+   > iteration 153: 1049 ms (1049343600 ns)
+     > norm: 2.288061113381098e-05
+     > has_extrapolated: False
+   > iteration 154: 1053 ms (1053913700 ns)
+     > norm: 2.2567835060621975e-05
+     > has_extrapolated: False
+   > iteration 155: 1052 ms (1052866500 ns)
+     > norm: 2.2245574536724522e-05
+     > has_extrapolated: False
+   > iteration 156: 1051 ms (1051950000 ns)
+     > norm: 2.1939347949813233e-05
+     > has_extrapolated: False
+   > iteration 157: 1057 ms (1057283500 ns)
+     > norm: 2.1629798828673863e-05
+     > has_extrapolated: False
+   > iteration 158: 1054 ms (1054356100 ns)
+     > norm: 2.134001896126407e-05
+     > has_extrapolated: False
+   > iteration 159: 4380 ms (4380838800 ns)
+     > norm: 2.1045454832767338e-05
+     > has_extrapolated: True
+   > iteration 160: 1059 ms (1059909600 ns)
+     > norm: 1.973750096052788e-05
+     > has_extrapolated: False
+   > iteration 161: 1093 ms (1093233400 ns)
+     > norm: 1.9464165892181138e-05
+     > has_extrapolated: False
+   > iteration 162: 1063 ms (1063738600 ns)
+     > norm: 1.9191418499369287e-05
+     > has_extrapolated: False
+   > iteration 163: 1075 ms (1075452600 ns)
+     > norm: 1.8933864432159994e-05
+     > has_extrapolated: False
+   > iteration 164: 1052 ms (1052837600 ns)
+     > norm: 1.8691596029138084e-05
+     > has_extrapolated: False
+   > iteration 165: 1088 ms (1088479500 ns)
+     > norm: 1.8449591116515967e-05
+     > has_extrapolated: False
+   > iteration 166: 1077 ms (1077596200 ns)
+     > norm: 1.8196989248422233e-05
+     > has_extrapolated: False
+   > iteration 167: 1058 ms (1058647900 ns)
+     > norm: 1.795817897385148e-05
+     > has_extrapolated: False
+   > iteration 168: 1082 ms (1082195100 ns)
+     > norm: 1.772051742778604e-05
+     > has_extrapolated: False
+   > iteration 169: 4417 ms (4417524000 ns)
+     > norm: 1.7493455099360744e-05
+     > has_extrapolated: True
+   > iteration 170: 1072 ms (1072985300 ns)
+     > norm: 1.6554395202723978e-05
+     > has_extrapolated: False
+   > iteration 171: 1052 ms (1052366800 ns)
+     > norm: 1.6348210565321418e-05
+     > has_extrapolated: False
+   > iteration 172: 1071 ms (1071794100 ns)
+     > norm: 1.612009070098631e-05
+     > has_extrapolated: False
+   > iteration 173: 1058 ms (1058003100 ns)
+     > norm: 1.590602396764175e-05
+     > has_extrapolated: False
+   > iteration 174: 1062 ms (1062698700 ns)
+     > norm: 1.570638198710089e-05
+     > has_extrapolated: False
+   > iteration 175: 1073 ms (1073613900 ns)
+     > norm: 1.550387181547397e-05
+     > has_extrapolated: False
+   > iteration 176: 1202 ms (1202068600 ns)
+     > norm: 1.5304465574065172e-05
+     > has_extrapolated: False
+   > iteration 177: 1216 ms (1216380700 ns)
+     > norm: 1.5114418046909404e-05
+     > has_extrapolated: False
+   > iteration 178: 1199 ms (1199550600 ns)
+     > norm: 1.4928146117712988e-05
+     > has_extrapolated: False
+   > iteration 179: 4335 ms (4335719700 ns)
+     > norm: 1.473636275053293e-05
+     > has_extrapolated: True
+   > iteration 180: 1062 ms (1062799000 ns)
+     > norm: 1.390233620486581e-05
+     > has_extrapolated: False
+   > iteration 181: 1044 ms (1044804500 ns)
+     > norm: 1.3735861399072856e-05
+     > has_extrapolated: False
+   > iteration 182: 1048 ms (1048634800 ns)
+     > norm: 1.35690645730584e-05
+     > has_extrapolated: False
+   > iteration 183: 1057 ms (1057807100 ns)
+     > norm: 1.340239470869724e-05
+     > has_extrapolated: False
+   > iteration 184: 1049 ms (1049552700 ns)
+     > norm: 1.3234977796347532e-05
+     > has_extrapolated: False
+   > iteration 185: 1083 ms (1083013300 ns)
+     > norm: 1.3074662082646697e-05
+     > has_extrapolated: False
+   > iteration 186: 1037 ms (1037976500 ns)
+     > norm: 1.2920251390925702e-05
+     > has_extrapolated: False
+   > iteration 187: 1067 ms (1067938700 ns)
+     > norm: 1.2766167520927976e-05
+     > has_extrapolated: False
+   > iteration 188: 1082 ms (1082940600 ns)
+     > norm: 1.2618801405001107e-05
+     > has_extrapolated: False
+   > iteration 189: 4838 ms (4838231100 ns)
+     > norm: 1.247139475072392e-05
+     > has_extrapolated: True
+   > iteration 190: 1077 ms (1077041200 ns)
+     > norm: 1.1890689489007646e-05
+     > has_extrapolated: False
+   > iteration 191: 1173 ms (1173810000 ns)
+     > norm: 1.1749391795695876e-05
+     > has_extrapolated: False
+   > iteration 192: 1137 ms (1137965000 ns)
+     > norm: 1.1614108498774077e-05
+     > has_extrapolated: False
+   > iteration 193: 1187 ms (1187703900 ns)
+     > norm: 1.1479130389434585e-05
+     > has_extrapolated: False
+   > iteration 194: 1089 ms (1089271400 ns)
+     > norm: 1.1342313769830174e-05
+     > has_extrapolated: False
+   > iteration 195: 1296 ms (1296484800 ns)
+     > norm: 1.1215123866370067e-05
+     > has_extrapolated: False
+   > iteration 196: 1138 ms (1138384800 ns)
+     > norm: 1.1081886141294874e-05
+     > has_extrapolated: False
+   > iteration 197: 1238 ms (1238223600 ns)
+     > norm: 1.0956477531512142e-05
+     > has_extrapolated: False
+   > iteration 198: 1214 ms (1214932100 ns)
+     > norm: 1.0830819880832914e-05
+     > has_extrapolated: False
+   > iteration 199: 4886 ms (4886316500 ns)
+     > norm: 1.0706664474972072e-05
+     > has_extrapolated: True
+   > iteration 200: 1242 ms (1242314300 ns)
+     > norm: 1.0166513523925098e-05
+     > has_extrapolated: False
+   > iteration 201: 1148 ms (1148719500 ns)
+     > norm: 1.0053723450634841e-05
+     > has_extrapolated: False
+   > iteration 202: 1139 ms (1139284400 ns)
+     > norm: 9.941839622770534e-06
+     > has_extrapolated: False
+   > iteration 203: 1175 ms (1175292500 ns)
+     > norm: 9.831961459213525e-06
+     > has_extrapolated: False
+   > iteration 204: 1157 ms (1157793100 ns)
+     > norm: 9.723878511706434e-06
+     > has_extrapolated: False
+   > iteration 205: 1145 ms (1145999400 ns)
+     > norm: 9.6169624217662e-06
+     > has_extrapolated: False
+   > iteration 206: 1237 ms (1237841400 ns)
+     > norm: 9.51284188239743e-06
+     > has_extrapolated: False
+   > iteration 207: 1223 ms (1223700700 ns)
+     > norm: 9.408689935714481e-06
+     > has_extrapolated: False
+   > iteration 208: 1112 ms (1112589600 ns)
+     > norm: 9.307032273918282e-06
+     > has_extrapolated: False
+   > iteration 209: 4834 ms (4834664500 ns)
+     > norm: 9.19978992653207e-06
+     > has_extrapolated: True
+   > iteration 210: 1150 ms (1150760000 ns)
+     > norm: 8.798845167944401e-06
+     > has_extrapolated: False
+   > iteration 211: 1183 ms (1183364300 ns)
+     > norm: 8.699706176823124e-06
+     > has_extrapolated: False
+   > iteration 212: 1166 ms (1166371500 ns)
+     > norm: 8.604649580586777e-06
+     > has_extrapolated: False
+   > iteration 213: 1142 ms (1142697700 ns)
+     > norm: 8.513614320082371e-06
+     > has_extrapolated: False
+   > iteration 214: 1210 ms (1210621700 ns)
+     > norm: 8.420469239645648e-06
+     > has_extrapolated: False
+   > iteration 215: 1225 ms (1225678100 ns)
+     > norm: 8.33193014602442e-06
+     > has_extrapolated: False
+   > iteration 216: 1153 ms (1153813600 ns)
+     > norm: 8.24214679788029e-06
+     > has_extrapolated: False
+   > iteration 217: 1159 ms (1159578500 ns)
+     > norm: 8.156276222284078e-06
+     > has_extrapolated: False
+   > iteration 218: 1156 ms (1156431100 ns)
+     > norm: 8.072087004204154e-06
+     > has_extrapolated: False
+   > iteration 219: 5228 ms (5228261800 ns)
+     > norm: 7.988092089105925e-06
+     > has_extrapolated: True
+   > iteration 220: 1132 ms (1132608100 ns)
+     > norm: 7.6129671274046984e-06
+     > has_extrapolated: False
+   > iteration 221: 1061 ms (1061796600 ns)
+     > norm: 7.535887853198871e-06
+     > has_extrapolated: False
+   > iteration 222: 1057 ms (1057979500 ns)
+     > norm: 7.459378887976267e-06
+     > has_extrapolated: False
+   > iteration 223: 1050 ms (1050295200 ns)
+     > norm: 7.38202205395109e-06
+     > has_extrapolated: False
+   > iteration 224: 1058 ms (1058838500 ns)
+     > norm: 7.30721990909514e-06
+     > has_extrapolated: False
+   > iteration 225: 1065 ms (1065878200 ns)
+     > norm: 7.23278747602031e-06
+     > has_extrapolated: False
+   > iteration 226: 1053 ms (1053456700 ns)
+     > norm: 7.159728802794196e-06
+     > has_extrapolated: False
+   > iteration 227: 1061 ms (1061711000 ns)
+     > norm: 7.087560882895643e-06
+     > has_extrapolated: False
+   > iteration 228: 1051 ms (1051612700 ns)
+     > norm: 7.01510826361611e-06
+     > has_extrapolated: False
+   > iteration 229: 4513 ms (4513988300 ns)
+     > norm: 6.945052947825353e-06
+     > has_extrapolated: True
+   > iteration 230: 1235 ms (1235259100 ns)
+     > norm: 6.672289920561736e-06
+     > has_extrapolated: False
+   > iteration 231: 1114 ms (1114017800 ns)
+     > norm: 6.60666795042699e-06
+     > has_extrapolated: False
+   > iteration 232: 1081 ms (1081041500 ns)
+     > norm: 6.5413054864346526e-06
+     > has_extrapolated: False
+   > iteration 233: 1350 ms (1350511300 ns)
+     > norm: 6.476091674884703e-06
+     > has_extrapolated: False
+   > iteration 234: 1268 ms (1268209400 ns)
+     > norm: 6.413030847848455e-06
+     > has_extrapolated: False
+   > iteration 235: 1269 ms (1269470900 ns)
+     > norm: 6.350534690842221e-06
+     > has_extrapolated: False
+   > iteration 236: 1049 ms (1049244600 ns)
+     > norm: 6.288502185888981e-06
+     > has_extrapolated: False
+   > iteration 237: 1054 ms (1054664700 ns)
+     > norm: 6.2273526529572045e-06
+     > has_extrapolated: False
+   > iteration 238: 1078 ms (1078980100 ns)
+     > norm: 6.166678960504513e-06
+     > has_extrapolated: False
+   > iteration 239: 4408 ms (4408359000 ns)
+     > norm: 6.1077047520815365e-06
+     > has_extrapolated: True
+   > iteration 240: 1063 ms (1063834800 ns)
+     > norm: 5.841944008340953e-06
+     > has_extrapolated: False
+   > iteration 241: 1067 ms (1067777500 ns)
+     > norm: 5.784880337769627e-06
+     > has_extrapolated: False
+   > iteration 242: 1049 ms (1049455700 ns)
+     > norm: 5.7294645654540665e-06
+     > has_extrapolated: False
+   > iteration 243: 1127 ms (1127639700 ns)
+     > norm: 5.6744806272878775e-06
+     > has_extrapolated: False
+   > iteration 244: 1251 ms (1251379100 ns)
+     > norm: 5.6200504810776145e-06
+     > has_extrapolated: False
+   > iteration 245: 1204 ms (1204996900 ns)
+     > norm: 5.566956895040773e-06
+     > has_extrapolated: False
+   > iteration 246: 1110 ms (1110874800 ns)
+     > norm: 5.512793466874632e-06
+     > has_extrapolated: False
+   > iteration 247: 1111 ms (1111331800 ns)
+     > norm: 5.460639461695599e-06
+     > has_extrapolated: False
+   > iteration 248: 1093 ms (1093623000 ns)
+     > norm: 5.408473624224307e-06
+     > has_extrapolated: False
+   > iteration 249: 4546 ms (4546123200 ns)
+     > norm: 5.3580272220619055e-06
+     > has_extrapolated: True
+   > iteration 250: 1087 ms (1087278900 ns)
+     > norm: 5.161819487022956e-06
+     > has_extrapolated: False
+   > iteration 251: 1080 ms (1080598300 ns)
+     > norm: 5.1146867464389896e-06
+     > has_extrapolated: False
+   > iteration 252: 1071 ms (1071432400 ns)
+     > norm: 5.0678591193064775e-06
+     > has_extrapolated: False
+   > iteration 253: 1089 ms (1089771000 ns)
+     > norm: 5.021373323290438e-06
+     > has_extrapolated: False
+   > iteration 254: 1060 ms (1060360000 ns)
+     > norm: 4.975615651070175e-06
+     > has_extrapolated: False
+   > iteration 255: 1083 ms (1083581800 ns)
+     > norm: 4.929977078150113e-06
+     > has_extrapolated: False
+   > iteration 256: 1066 ms (1066409500 ns)
+     > norm: 4.8852505535510484e-06
+     > has_extrapolated: False
+   > iteration 257: 1084 ms (1084143000 ns)
+     > norm: 4.840957733990427e-06
+     > has_extrapolated: False
+   > iteration 258: 1066 ms (1066791000 ns)
+     > norm: 4.7971644879587515e-06
+     > has_extrapolated: False
+   > iteration 259: 4456 ms (4456087100 ns)
+     > norm: 4.753836188305521e-06
+     > has_extrapolated: True
+   > iteration 260: 1205 ms (1205689700 ns)
+     > norm: 4.556277897543992e-06
+     > has_extrapolated: False
+   > iteration 261: 1225 ms (1225988600 ns)
+     > norm: 4.5155866943870354e-06
+     > has_extrapolated: False
+   > iteration 262: 1155 ms (1155090200 ns)
+     > norm: 4.474916534616192e-06
+     > has_extrapolated: False
+   > iteration 263: 1084 ms (1084755600 ns)
+     > norm: 4.435296491584661e-06
+     > has_extrapolated: False
+   > iteration 264: 1070 ms (1070383600 ns)
+     > norm: 4.395747006655974e-06
+     > has_extrapolated: False
+   > iteration 265: 1082 ms (1082819200 ns)
+     > norm: 4.3570148142226576e-06
+     > has_extrapolated: False
+   > iteration 266: 1068 ms (1068940200 ns)
+     > norm: 4.318699075562607e-06
+     > has_extrapolated: False
+   > iteration 267: 1076 ms (1076779600 ns)
+     > norm: 4.2807724357865216e-06
+     > has_extrapolated: False
+   > iteration 268: 1166 ms (1166674200 ns)
+     > norm: 4.243169074257261e-06
+     > has_extrapolated: False
+   > iteration 269: 5420 ms (5420459800 ns)
+     > norm: 4.206063312906307e-06
+     > has_extrapolated: True
+   > iteration 270: 1211 ms (1211401300 ns)
+     > norm: 4.063830848404301e-06
+     > has_extrapolated: False
+   > iteration 271: 1258 ms (1258161800 ns)
+     > norm: 4.028702177277927e-06
+     > has_extrapolated: False
+   > iteration 272: 1265 ms (1265080100 ns)
+     > norm: 3.993956998463231e-06
+     > has_extrapolated: False
+   > iteration 273: 1198 ms (1198428300 ns)
+     > norm: 3.959575157370546e-06
+     > has_extrapolated: False
+   > iteration 274: 1386 ms (1386090800 ns)
+     > norm: 3.925565803078044e-06
+     > has_extrapolated: False
+   > iteration 275: 1225 ms (1225435800 ns)
+     > norm: 3.891912402740987e-06
+     > has_extrapolated: False
+   > iteration 276: 1620 ms (1620097700 ns)
+     > norm: 3.8586215638006166e-06
+     > has_extrapolated: False
+   > iteration 277: 1436 ms (1436597000 ns)
+     > norm: 3.82567414343895e-06
+     > has_extrapolated: False
+   > iteration 278: 1254 ms (1254104500 ns)
+     > norm: 3.7930794044093075e-06
+     > has_extrapolated: False
+   > iteration 279: 5486 ms (5486108900 ns)
+     > norm: 3.760821848814512e-06
+     > has_extrapolated: True
+   > iteration 280: 1596 ms (1596127600 ns)
+     > norm: 3.612673148894945e-06
+     > has_extrapolated: False
+   > iteration 281: 1362 ms (1362076800 ns)
+     > norm: 3.5821849578581788e-06
+     > has_extrapolated: False
+   > iteration 282: 1416 ms (1416699500 ns)
+     > norm: 3.552007124178281e-06
+     > has_extrapolated: False
+   > iteration 283: 1198 ms (1198147700 ns)
+     > norm: 3.5221483482841624e-06
+     > has_extrapolated: False
+   > iteration 284: 1546 ms (1546253600 ns)
+     > norm: 3.4925947502987325e-06
+     > has_extrapolated: False
+   > iteration 285: 1844 ms (1844215700 ns)
+     > norm: 3.4633566838363458e-06
+     > has_extrapolated: False
+   > iteration 286: 1685 ms (1685941300 ns)
+     > norm: 3.434414409917965e-06
+     > has_extrapolated: False
+   > iteration 287: 1473 ms (1473866800 ns)
+     > norm: 3.4057757007413715e-06
+     > has_extrapolated: False
+   > iteration 288: 1575 ms (1575041900 ns)
+     > norm: 3.3774235827502627e-06
+     > has_extrapolated: False
+   > iteration 289: 6533 ms (6533455800 ns)
+     > norm: 3.3493659927460056e-06
+     > has_extrapolated: True
+   > iteration 290: 1545 ms (1545718200 ns)
+     > norm: 3.2452959925116125e-06
+     > has_extrapolated: False
+   > iteration 291: 1619 ms (1619961800 ns)
+     > norm: 3.218605283515566e-06
+     > has_extrapolated: False
+   > iteration 292: 1784 ms (1784583700 ns)
+     > norm: 3.192188746312716e-06
+     > has_extrapolated: False
+   > iteration 293: 1900 ms (1900342200 ns)
+     > norm: 3.1660344940509887e-06
+     > has_extrapolated: False
+   > iteration 294: 2271 ms (2271550600 ns)
+     > norm: 3.1401462383766027e-06
+     > has_extrapolated: False
+   > iteration 295: 2180 ms (2180121400 ns)
+     > norm: 3.1145116726014895e-06
+     > has_extrapolated: False
+   > iteration 296: 1726 ms (1726901800 ns)
+     > norm: 3.089138002232764e-06
+     > has_extrapolated: False
+   > iteration 297: 1826 ms (1826926600 ns)
+     > norm: 3.064012023719635e-06
+     > has_extrapolated: False
+   > iteration 298: 1700 ms (1700437600 ns)
+     > norm: 3.0391394801336774e-06
+     > has_extrapolated: False
+   > iteration 299: 6755 ms (6755004200 ns)
+     > norm: 3.0145084245843297e-06
+     > has_extrapolated: True
+   > iteration 300: 1794 ms (1794259300 ns)
+     > norm: 2.9064305410945047e-06
+     > has_extrapolated: False
+   > iteration 301: 1763 ms (1763712600 ns)
+     > norm: 2.8830530528197847e-06
+     > has_extrapolated: False
+   > iteration 302: 1694 ms (1694634700 ns)
+     > norm: 2.8599000460712963e-06
+     > has_extrapolated: False
+   > iteration 303: 1719 ms (1719937900 ns)
+     > norm: 2.8369763560426764e-06
+     > has_extrapolated: False
+   > iteration 304: 1616 ms (1616089300 ns)
+     > norm: 2.8142711074131524e-06
+     > has_extrapolated: False
+   > iteration 305: 1675 ms (1675254500 ns)
+     > norm: 2.7917902136206885e-06
+     > has_extrapolated: False
+   > iteration 306: 1659 ms (1659464100 ns)
+     > norm: 2.769523401747472e-06
+     > has_extrapolated: False
+   > iteration 307: 1815 ms (1815012000 ns)
+     > norm: 2.7474773329666165e-06
+     > has_extrapolated: False
+   > iteration 308: 1868 ms (1868293500 ns)
+     > norm: 2.725640458080074e-06
+     > has_extrapolated: False
+   > iteration 309: 7272 ms (7272668400 ns)
+     > norm: 2.7040177139798656e-06
+     > has_extrapolated: True
+   > iteration 310: 1866 ms (1866465100 ns)
+     > norm: 2.6299968493568517e-06
+     > has_extrapolated: False
+   > iteration 311: 1757 ms (1757977300 ns)
+     > norm: 2.6093337843345343e-06
+     > has_extrapolated: False
+   > iteration 312: 1722 ms (1722583100 ns)
+     > norm: 2.588870225072251e-06
+     > has_extrapolated: False
+   > iteration 313: 1766 ms (1766245600 ns)
+     > norm: 2.5685981105523447e-06
+     > has_extrapolated: False
+   > iteration 314: 1824 ms (1824876900 ns)
+     > norm: 2.548521022887836e-06
+     > has_extrapolated: False
+   > iteration 315: 1878 ms (1878757400 ns)
+     > norm: 2.52862986556791e-06
+     > has_extrapolated: False
+   > iteration 316: 1806 ms (1806435500 ns)
+     > norm: 2.5089296470049063e-06
+     > has_extrapolated: False
+   > iteration 317: 1775 ms (1775508000 ns)
+     > norm: 2.4894111056500188e-06
+     > has_extrapolated: False
+   > iteration 318: 1830 ms (1830915700 ns)
+     > norm: 2.470079024026841e-06
+     > has_extrapolated: False
+   > iteration 319: 7389 ms (7389047300 ns)
+     > norm: 2.4509247224553554e-06
+     > has_extrapolated: True
+   > iteration 320: 1764 ms (1764418300 ns)
+     > norm: 2.3657891167402528e-06
+     > has_extrapolated: False
+   > iteration 321: 1772 ms (1772392500 ns)
+     > norm: 2.347576691678502e-06
+     > has_extrapolated: False
+   > iteration 322: 1804 ms (1804673700 ns)
+     > norm: 2.3295300212255334e-06
+     > has_extrapolated: False
+   > iteration 323: 1818 ms (1818138600 ns)
+     > norm: 2.3116539380996943e-06
+     > has_extrapolated: False
+   > iteration 324: 1746 ms (1746155100 ns)
+     > norm: 2.293940650817135e-06
+     > has_extrapolated: False
+   > iteration 325: 1751 ms (1751998000 ns)
+     > norm: 2.2763930237209247e-06
+     > has_extrapolated: False
+   > iteration 326: 1706 ms (1706222600 ns)
+     > norm: 2.259003589564207e-06
+     > has_extrapolated: False
+   > iteration 327: 1771 ms (1771447400 ns)
+     > norm: 2.241776399551378e-06
+     > has_extrapolated: False
+   > iteration 328: 1811 ms (1811189000 ns)
+     > norm: 2.2247044331332793e-06
+     > has_extrapolated: False
+   > iteration 329: 6874 ms (6874562700 ns)
+     > norm: 2.2077907122623685e-06
+     > has_extrapolated: True
+   > iteration 330: 1064 ms (1064288100 ns)
+     > norm: 2.1510424712139e-06
+     > has_extrapolated: False
+   > iteration 331: 1161 ms (1161931300 ns)
+     > norm: 2.1348346220802868e-06
+     > has_extrapolated: False
+   > iteration 332: 1166 ms (1166644700 ns)
+     > norm: 2.118775071281614e-06
+     > has_extrapolated: False
+   > iteration 333: 1169 ms (1169533400 ns)
+     > norm: 2.1028576455295428e-06
+     > has_extrapolated: False
+   > iteration 334: 1090 ms (1090724900 ns)
+     > norm: 2.08708559369916e-06
+     > has_extrapolated: False
+   > iteration 335: 1326 ms (1326631300 ns)
+     > norm: 2.0714526027973953e-06
+     > has_extrapolated: False
+   > iteration 336: 1993 ms (1993083300 ns)
+     > norm: 2.055963319199069e-06
+     > has_extrapolated: False
+   > iteration 337: 2047 ms (2047258700 ns)
+     > norm: 2.040611236062252e-06
+     > has_extrapolated: False
+   > iteration 338: 2012 ms (2012651200 ns)
+     > norm: 2.0253981078837782e-06
+     > has_extrapolated: False
+   > iteration 339: 8511 ms (8511138400 ns)
+     > norm: 2.0103180874396327e-06
+     > has_extrapolated: True
+   > iteration 340: 1591 ms (1591619000 ns)
+     > norm: 1.9422491428823318e-06
+     > has_extrapolated: False
+   > iteration 341: 1710 ms (1710913400 ns)
+     > norm: 1.927872654959125e-06
+     > has_extrapolated: False
+   > iteration 342: 2076 ms (2076454200 ns)
+     > norm: 1.913620733169131e-06
+     > has_extrapolated: False
+   > iteration 343: 1737 ms (1737893800 ns)
+     > norm: 1.8994960724662073e-06
+     > has_extrapolated: False
+   > iteration 344: 1935 ms (1935838300 ns)
+     > norm: 1.8854931549924513e-06
+     > has_extrapolated: False
+   > iteration 345: 1703 ms (1703815400 ns)
+     > norm: 1.871614680550697e-06
+     > has_extrapolated: False
+   > iteration 346: 2770 ms (2770061400 ns)
+     > norm: 1.8578555602650849e-06
+     > has_extrapolated: False
+   > iteration 347: 2366 ms (2366087200 ns)
+     > norm: 1.844218554712755e-06
+     > has_extrapolated: False
+   > iteration 348: 1747 ms (1747580800 ns)
+     > norm: 1.8306983136609197e-06
+     > has_extrapolated: False
+   > iteration 349: 7836 ms (7836902200 ns)
+     > norm: 1.8172976311666054e-06
+     > has_extrapolated: True
+   > iteration 350: 1735 ms (1735965900 ns)
+     > norm: 1.773221840096983e-06
+     > has_extrapolated: False
+   > iteration 351: 1994 ms (1994953200 ns)
+     > norm: 1.7603599170654573e-06
+     > has_extrapolated: False
+   > iteration 352: 2127 ms (2127453700 ns)
+     > norm: 1.7476101965083127e-06
+     > has_extrapolated: False
+   > iteration 353: 2124 ms (2124169400 ns)
+     > norm: 1.7349680053998739e-06
+     > has_extrapolated: False
+   > iteration 354: 1756 ms (1756751600 ns)
+     > norm: 1.7224351198089379e-06
+     > has_extrapolated: False
+   > iteration 355: 1862 ms (1862258200 ns)
+     > norm: 1.7100076084867104e-06
+     > has_extrapolated: False
+   > iteration 356: 1991 ms (1991388600 ns)
+     > norm: 1.697687049564583e-06
+     > has_extrapolated: False
+   > iteration 357: 1957 ms (1957346700 ns)
+     > norm: 1.6854699536654542e-06
+     > has_extrapolated: False
+   > iteration 358: 1568 ms (1568891200 ns)
+     > norm: 1.6733576513671385e-06
+     > has_extrapolated: False
+   > iteration 359: 7715 ms (7715118400 ns)
+     > norm: 1.661346639856944e-06
+     > has_extrapolated: True
+   > iteration 360: 1747 ms (1747686700 ns)
+     > norm: 1.606530242731119e-06
+     > has_extrapolated: False
+   > iteration 361: 1844 ms (1844332900 ns)
+     > norm: 1.5950594336943213e-06
+     > has_extrapolated: False
+   > iteration 362: 1945 ms (1945125100 ns)
+     > norm: 1.5836834527267442e-06
+     > has_extrapolated: False
+   > iteration 363: 1861 ms (1861462400 ns)
+     > norm: 1.5724036839215122e-06
+     > has_extrapolated: False
+   > iteration 364: 1917 ms (1917324800 ns)
+     > norm: 1.561217036505179e-06
+     > has_extrapolated: False
+   > iteration 365: 1853 ms (1853510300 ns)
+     > norm: 1.5501246470209792e-06
+     > has_extrapolated: False
+   > iteration 366: 1541 ms (1541459900 ns)
+     > norm: 1.5391231864609973e-06
+     > has_extrapolated: False
+   > iteration 367: 1735 ms (1735495800 ns)
+     > norm: 1.5282141316529173e-06
+     > has_extrapolated: False
+   > iteration 368: 1586 ms (1586103700 ns)
+     > norm: 1.5173944408017093e-06
+     > has_extrapolated: False
+   > iteration 369: 6736 ms (6736957700 ns)
+     > norm: 1.5066655840041424e-06
+     > has_extrapolated: True
+   > iteration 370: 1789 ms (1789574300 ns)
+     > norm: 1.4719677955635012e-06
+     > has_extrapolated: False
+   > iteration 371: 1435 ms (1435952600 ns)
+     > norm: 1.4616332635430309e-06
+     > has_extrapolated: False
+   > iteration 372: 1842 ms (1842826400 ns)
+     > norm: 1.4513843026532742e-06
+     > has_extrapolated: False
+   > iteration 373: 1738 ms (1738413000 ns)
+     > norm: 1.4412179916444936e-06
+     > has_extrapolated: False
+   > iteration 374: 1744 ms (1744473000 ns)
+     > norm: 1.4311352727348483e-06
+     > has_extrapolated: False
+   > iteration 375: 1822 ms (1822288000 ns)
+     > norm: 1.4211336030607156e-06
+     > has_extrapolated: False
+   > iteration 376: 1687 ms (1687399600 ns)
+     > norm: 1.4112140552419753e-06
+     > has_extrapolated: False
+   > iteration 377: 1773 ms (1773852400 ns)
+     > norm: 1.4013740139399759e-06
+     > has_extrapolated: False
+   > iteration 378: 1998 ms (1998565500 ns)
+     > norm: 1.3916147196455916e-06
+     > has_extrapolated: False
+   > iteration 379: 6389 ms (6389906100 ns)
+     > norm: 1.3819334124484323e-06
+     > has_extrapolated: True
+   > iteration 380: 1739 ms (1739793300 ns)
+     > norm: 1.3371361734209344e-06
+     > has_extrapolated: False
+   > iteration 381: 1739 ms (1739800300 ns)
+     > norm: 1.327876746661294e-06
+     > has_extrapolated: False
+   > iteration 382: 1777 ms (1777651100 ns)
+     > norm: 1.3186908517376756e-06
+     > has_extrapolated: False
+   > iteration 383: 1812 ms (1812201200 ns)
+     > norm: 1.3095793301800327e-06
+     > has_extrapolated: False
+   > iteration 384: 1792 ms (1792686400 ns)
+     > norm: 1.300539891682826e-06
+     > has_extrapolated: False
+   > iteration 385: 1776 ms (1776222900 ns)
+     > norm: 1.291574066816539e-06
+     > has_extrapolated: False
+   > iteration 386: 1709 ms (1709823800 ns)
+     > norm: 1.2826791332595114e-06
+     > has_extrapolated: False
+   > iteration 387: 1734 ms (1734044000 ns)
+     > norm: 1.2738555474266621e-06
+     > has_extrapolated: False
+   > iteration 388: 1728 ms (1728012000 ns)
+     > norm: 1.2651012765709556e-06
+     > has_extrapolated: False
+   > iteration 389: 7255 ms (7255788400 ns)
+     > norm: 1.256417069168979e-06
+     > has_extrapolated: True
+   > iteration 390: 2085 ms (2085432300 ns)
+     > norm: 1.2287996000653128e-06
+     > has_extrapolated: False
+   > iteration 391: 1716 ms (1716887700 ns)
+     > norm: 1.220417492735484e-06
+     > has_extrapolated: False
+   > iteration 392: 1432 ms (1432104000 ns)
+     > norm: 1.2121017284495408e-06
+     > has_extrapolated: False
+   > iteration 393: 1806 ms (1806182600 ns)
+     > norm: 1.2038505302594902e-06
+     > has_extrapolated: False
+   > iteration 394: 1730 ms (1730383100 ns)
+     > norm: 1.195664527077856e-06
+     > has_extrapolated: False
+   > iteration 395: 1572 ms (1572556000 ns)
+     > norm: 1.1875419598513608e-06
+     > has_extrapolated: False
+   > iteration 396: 1624 ms (1624587700 ns)
+     > norm: 1.179483595329075e-06
+     > has_extrapolated: False
+   > iteration 397: 1566 ms (1566741300 ns)
+     > norm: 1.1714876111754419e-06
+     > has_extrapolated: False
+   > iteration 398: 1525 ms (1525379700 ns)
+     > norm: 1.1635543581537939e-06
+     > has_extrapolated: False
+   > iteration 399: 6564 ms (6564557800 ns)
+     > norm: 1.1556820538973728e-06
+     > has_extrapolated: True
+   > iteration 400: 1787 ms (1787460200 ns)
+     > norm: 1.1187919408637514e-06
+     > has_extrapolated: False
+   > iteration 401: 1528 ms (1528787200 ns)
+     > norm: 1.1112524332096245e-06
+     > has_extrapolated: False
+   > iteration 402: 1629 ms (1629473500 ns)
+     > norm: 1.103770676770384e-06
+     > has_extrapolated: False
+   > iteration 403: 1664 ms (1664672200 ns)
+     > norm: 1.096347032989266e-06
+     > has_extrapolated: False
+   > iteration 404: 1501 ms (1501093900 ns)
+     > norm: 1.0889798465406086e-06
+     > has_extrapolated: False
+   > iteration 405: 1489 ms (1489733200 ns)
+     > norm: 1.0816696834495e-06
+     > has_extrapolated: False
+   > iteration 406: 2315 ms (2315079200 ns)
+     > norm: 1.0744149949484971e-06
+     > has_extrapolated: False
+   > iteration 407: 1717 ms (1717470100 ns)
+     > norm: 1.0672163399288618e-06
+     > has_extrapolated: False
+   > iteration 408: 1717 ms (1717201600 ns)
+     > norm: 1.060072136667694e-06
+     > has_extrapolated: False
+   > iteration 409: 6577 ms (6577398400 ns)
+     > norm: 1.0529829405052008e-06
+     > has_extrapolated: True
+   > iteration 410: 1711 ms (1711393100 ns)
+     > norm: 1.0307932075807368e-06
+     > has_extrapolated: False
+   > iteration 411: 1855 ms (1855915900 ns)
+     > norm: 1.023938638961583e-06
+     > has_extrapolated: False
+   > iteration 412: 1701 ms (1701941300 ns)
+     > norm: 1.01713777138894e-06
+     > has_extrapolated: False
+   > iteration 413: 1816 ms (1816437900 ns)
+     > norm: 1.0103870015031074e-06
+     > has_extrapolated: False
+   > iteration 414: 1836 ms (1836023400 ns)
+     > norm: 1.0036909735663283e-06
+     > has_extrapolated: False
+   > iteration 415: 1769 ms (1769912400 ns)
+     > norm: 9.970448453580852e-07
+     > has_extrapolated: False
+
+

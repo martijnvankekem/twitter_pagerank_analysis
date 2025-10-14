@@ -3,8 +3,8 @@ from helpers.analysis import Analysis
 from helpers.files import output_to_file
 
 MAX_ITERATIONS = 10_000
-QE_EVERY = 15
-TOLERANCE = 1e-10
+QE_EVERY = 10
+TOLERANCE = 1e-6
 
 def l1_normalize(v):
     s = np.sum(v)
@@ -79,9 +79,9 @@ def run(m, out_path: str, d: float = 0.85):
                             {
                                 "run_type": out_path,
                                 "damping": d,
+                                "tolerance": TOLERANCE,
                                 "max_iterations": MAX_ITERATIONS,
                                 "extrapolate_every": QE_EVERY,
-                                "tolerance": TOLERANCE,
                             })
     analysis_obj.start()
 

@@ -1,0 +1,116 @@
+Run-time and complexity analysis
+-- name: pagerank_default
+-- description: PageRank algorithm - Default
+-- metadata:
+   > run_type: presentation
+   > damping: 0.85
+   > tolerance: 1e-06
+-- duration: 61206 ms (61206348000 ns)
+   > start time (in ns): 1760450043921711700
+   > end time (in ns): 1760450105128059700
+-- iterations: 51
+   > avg. duration per iteration: 1186.0 ms (1186898607.8431373 ns)
+   > iteration 0: 1180 ms (1180025500 ns)
+     > norm: 0.9372551864391081
+   > iteration 1: 1160 ms (1160074100 ns)
+     > norm: 0.28920451328238095
+   > iteration 2: 1160 ms (1160652900 ns)
+     > norm: 0.09612589659318613
+   > iteration 3: 1135 ms (1135249200 ns)
+     > norm: 0.05129485325446376
+   > iteration 4: 1115 ms (1115030900 ns)
+     > norm: 0.03138007494214992
+   > iteration 5: 1200 ms (1200579600 ns)
+     > norm: 0.02014904450825001
+   > iteration 6: 1129 ms (1129128600 ns)
+     > norm: 0.013192675650270486
+   > iteration 7: 1144 ms (1144026700 ns)
+     > norm: 0.008803182638869644
+   > iteration 8: 1418 ms (1418309000 ns)
+     > norm: 0.005957636842323202
+   > iteration 9: 1372 ms (1372126700 ns)
+     > norm: 0.004098843110893382
+   > iteration 10: 1326 ms (1326800900 ns)
+     > norm: 0.0028597770230223626
+   > iteration 11: 1374 ms (1374283600 ns)
+     > norm: 0.0020300129275209354
+   > iteration 12: 1220 ms (1220013100 ns)
+     > norm: 0.0014618227756149483
+   > iteration 13: 1135 ms (1135560400 ns)
+     > norm: 0.0010717251140373533
+   > iteration 14: 1124 ms (1124495700 ns)
+     > norm: 0.0007968023156522291
+   > iteration 15: 1167 ms (1167799400 ns)
+     > norm: 0.0006027788780755311
+   > iteration 16: 1450 ms (1450037000 ns)
+     > norm: 0.00046175819699144295
+   > iteration 17: 1175 ms (1175529300 ns)
+     > norm: 0.00035924222505732056
+   > iteration 18: 1200 ms (1200736200 ns)
+     > norm: 0.00028237597060625446
+   > iteration 19: 1261 ms (1261547800 ns)
+     > norm: 0.00022481244604004893
+   > iteration 20: 1324 ms (1324575100 ns)
+     > norm: 0.00018037844874540404
+   > iteration 21: 1229 ms (1229048200 ns)
+     > norm: 0.00014617452559372138
+   > iteration 22: 1279 ms (1279401400 ns)
+     > norm: 0.00011910930301191352
+   > iteration 23: 1145 ms (1145222300 ns)
+     > norm: 9.778208575522061e-05
+   > iteration 24: 1136 ms (1136934500 ns)
+     > norm: 8.057348936124607e-05
+   > iteration 25: 1142 ms (1142627400 ns)
+     > norm: 6.675811127335318e-05
+   > iteration 26: 1108 ms (1108251600 ns)
+     > norm: 5.544797542238728e-05
+   > iteration 27: 1119 ms (1119687800 ns)
+     > norm: 4.6237792006549046e-05
+   > iteration 28: 1150 ms (1150516900 ns)
+     > norm: 3.8620130055695915e-05
+   > iteration 29: 1173 ms (1173676700 ns)
+     > norm: 3.235083804326583e-05
+   > iteration 30: 1169 ms (1169709400 ns)
+     > norm: 2.7128825726650113e-05
+   > iteration 31: 1160 ms (1160945800 ns)
+     > norm: 2.279763058415814e-05
+   > iteration 32: 1147 ms (1147043800 ns)
+     > norm: 1.9172277642252378e-05
+   > iteration 33: 1130 ms (1130752400 ns)
+     > norm: 1.614848625031326e-05
+   > iteration 34: 1169 ms (1169294900 ns)
+     > norm: 1.3608766911573781e-05
+   > iteration 35: 1161 ms (1161149800 ns)
+     > norm: 1.1481810519043504e-05
+   > iteration 36: 1160 ms (1160826600 ns)
+     > norm: 9.691024681394843e-06
+   > iteration 37: 1167 ms (1167206300 ns)
+     > norm: 8.186754444707724e-06
+   > iteration 38: 1165 ms (1165948600 ns)
+     > norm: 6.918043825928059e-06
+   > iteration 39: 1141 ms (1141298600 ns)
+     > norm: 5.849889653689229e-06
+   > iteration 40: 1149 ms (1149634800 ns)
+     > norm: 4.947862048045512e-06
+   > iteration 41: 1123 ms (1123959100 ns)
+     > norm: 4.187085694078378e-06
+   > iteration 42: 1160 ms (1160731000 ns)
+     > norm: 3.544011755638964e-06
+   > iteration 43: 1172 ms (1172674400 ns)
+     > norm: 3.0009886415878997e-06
+   > iteration 44: 1149 ms (1149966200 ns)
+     > norm: 2.541596836172032e-06
+   > iteration 45: 1156 ms (1156842600 ns)
+     > norm: 2.153240785181566e-06
+   > iteration 46: 1135 ms (1135040600 ns)
+     > norm: 1.824492346613498e-06
+   > iteration 47: 1197 ms (1197320400 ns)
+     > norm: 1.5463427145062772e-06
+   > iteration 48: 1152 ms (1152924300 ns)
+     > norm: 1.3107614150169082e-06
+   > iteration 49: 1124 ms (1124881100 ns)
+     > norm: 1.1113112256726545e-06
+   > iteration 50: 1171 ms (1171729800 ns)
+     > norm: 9.423059025439116e-07
+
+

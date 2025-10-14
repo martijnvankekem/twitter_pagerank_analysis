@@ -2,7 +2,7 @@ import numpy as np
 from helpers.analysis import Analysis
 from helpers.files import output_to_file
 
-TOLERANCE = 1e-10
+TOLERANCE = 1e-6
 
 # https://en.wikipedia.org/wiki/PageRank#Iterative
 def run(m, out_path: str, d: float = 0.85):
