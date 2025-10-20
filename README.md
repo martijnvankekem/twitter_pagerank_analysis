@@ -1,4 +1,18 @@
 # Twitter Pagerank Analysis
+Group 7 - Scientific computing (Eindhoven University of Technology)
+
+Casper von Berg, Bram Gerrits, Martijn van Kekem, Pax Mallee, Lieke van der Sommen
+
+## Prerequisites
+This code requires Python 3.12.0, including the following dependencies (installable via PIP):
+- scipy
+- fast_matrix_market
+- numpy
+- scikit-learn
+
+In order to run this code, at least 40 GB of available memory is required in order to process the dataset.
+The code is tested on Microsoft Windows 11 Pro Version 10.0.26100 Build 26100. 
+We can not guarantee successful execution on other platforms.
 
 ## Getting started
 1. Retrieve the dataset from https://sparse.tamu.edu/SNAP/twitter7 in Matrix Market format.
